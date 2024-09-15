@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Watch Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Watch Shop</h1>
+        <div class="cart">
+            <span>Items in Cart: </span><span id="cart-count">0</span> | 
+            <span>Total Price: $</span><span id="total-price">0</span>
+        </div>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="watch1.jpg" alt="Watch 1">
+            <h2>Luxury Watch</h2>
+            <p>$250</p>
+            <button onclick="addToCart('Luxury Watch', 250)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="watch2.jpg" alt="Watch 2">
+            <h2>Sport Watch</h2>
+            <p>$150</p>
+            <button onclick="addToCart('Sport Watch', 150)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="watch3.jpg" alt="Watch 3">
+            <h2>Classic Watch</h2>
+            <p>$180</p>
+            <button onclick="addToCart('Classic Watch', 180)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="cart-items">
+        <h3>Cart Items</h3>
+        <ul id="cart-items-list">
+            <li>No items added yet</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
